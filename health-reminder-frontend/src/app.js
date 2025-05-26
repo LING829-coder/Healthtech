@@ -8,6 +8,13 @@ import Appointments from './pages/Appointments';
 import Medications from './pages/Medications';
 import Login from './pages/Login';
 
+const express = require('express');
+const app = require('./src/app'); // Make sure this path is correct
+const PORT = 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
+});
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
